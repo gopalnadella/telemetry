@@ -8,7 +8,7 @@ resource "aws_s3_bucket" "example1" {
 }
 
 resource "aws_dynamodb_table" "users" {
-  name           = "users_dev"
+  name           = "users_dev-cicd"
   billing_mode   = "PAY_PER_REQUEST"
 
   hash_key       = "userId"
