@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "example1" {
-  bucket = "gk-state-file"
+  bucket = "gk-state-file-cicd"
   force_destroy = true
 }
 
