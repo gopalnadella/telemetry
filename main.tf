@@ -3,16 +3,16 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "example1" {
-  bucket = "gk-state-file-cicd"
+  bucket        = "gk-state-file-cicd"
   force_destroy = true
 }
 
 resource "aws_dynamodb_table" "users" {
-  name           = "users_dev-cicd"
-  billing_mode   = "PAY_PER_REQUEST"
+  name         = "users_dev-cicd"
+  billing_mode = "PAY_PER_REQUEST"
 
-  hash_key       = "userId"
-  range_key      = "createdAt"
+  hash_key  = "userId"
+  range_key = "createdAt"
 
   attribute {
     name = "userId"
